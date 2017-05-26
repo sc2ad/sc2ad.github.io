@@ -17,13 +17,13 @@
 	</div>
     <hr>
     <p id="context"></p>
-    <img id=image src="" alt="Unselected Image">
+    <img id=image src="" alt="Unselected Image" class="center fit">
     <hr>
-    <img id=image2 src="">
+    <img id=image2 src="" class="center fit">
     <hr>
-    <img id=image3 src="">
+    <img id=image3 src="" class="center fit">
     <hr>
-    <img id=image4 src="">
+    <img id=image4 src="" class="center fit">
     <hr>
 
     <script>
@@ -86,5 +86,15 @@
         document.getElementById("image4").setAttribute("src", "");
     }
     </script>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script type="text/javascript" language="JavaScript">
+	  function set_body_height() { // set body height = window height
+	    $('body').height($(window).height());
+	  }
+	  $(document).ready(function() {
+	    $(window).bind('resize', set_body_height);
+	    set_body_height();
+	  });
+	</script>
 </body>
 </html>
