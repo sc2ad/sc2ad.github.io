@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<title>Welcome to Scadland!</title>
+<h1 id="u">You <b>will</b> like it here.</h1>
+<p id="long">Sometimes you have to type long things, and no one ever bothers to listen. Maybe someday, you will be respected, but right now you are just a degenerate like the trash you are and the trash you surround yourself with. Learn to live, but really, I don't care. Your life is nothing. Just another blip on a monitor, a less than nothing piece of existence. Kill yourself.</p>
+<p id="test">You <i>will</i> like it <b><u>here</u></b></p>
+<hr>
+
+<script>
+function toggle() {
+    if(document.getElementById("long").style.color == "red")
+    {
+    	document.getElementById("long").style.color = "black";
+    } else {
+    	document.getElementById("long").style.color = "red";
+    }
+    for (i = 0; i < 100; i++) {
+       document.getElementById("new").innerHTML += "1";
+    }
+    document.getElementById("new").innerHTML += "\n";
+}
+</script>
+<div>
+<button type="button" 
+onclick="toggle()" id="btn1">
+Click me for funz</button>
+<button type="button" onclick="showPicture(1)" id="btnPic1">Picture 1</button>
+</div>
+<hr>
+<p id="new"></p>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<title>Welcome to Scadland!</title>
+	<div id=buttonHeader>
+    	<button type="button" onclick="picture(1)" id="picture1">Picture 1</button>
+        <button type="button" onclick="picture(2)" id="picture2">Picture 2</button>
+	</div>
+    <hr>
+    <p id="context"></p>
+    <img id=image src="" alt="Unselected Image" style="width:128px;height:64px">
+    <script>
+    function picture(num) {
+    	var context = document.getElementById("context");
+        var image = document.getElementById("image");
+    	if (num==1) {
+        	context.innerHTML = "This is picture 1!";
+            image.setAttribute("src", "smiley.gif");
+        }
+        if (num==2) {
+        	context.innerHTML = "This is picture 2!";
+    }
+    </script>
+</body>
+</html>
