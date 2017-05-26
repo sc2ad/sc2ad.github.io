@@ -1,15 +1,27 @@
 body {
-	background-color: white;
+	background-color: cyan;
 }
-title {
-	color: blue;
+#picture1 {
+	background-color: pink;
 }
-u {
-	color: red;
+#picture2 {
+	background-color: orange;
 }
-long {
-    background-color: yellow;
+#picture3 {
+	background-color: teal;
 }
-test {
-	color: black;
+#picture4 {
+	background-color: lime;
+}
+#picture5 {
+	background-color: green;
+}
+#picture6 {
+	background-color: yellow;
+}
+#picture7 {
+	background-color: violet;
+}
+#picture8 {
+	background-color: red;
 }
